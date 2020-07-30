@@ -1,0 +1,111 @@
+
+@font-face{
+    font-family: Roobert;
+    src: url("./Roobert/Roobert-Regular.otf");
+}
+
+body {
+    margin: 0;
+}
+
+body .header {
+    flex: 1;
+    height: 50px;
+
+    display: flex;
+    background-color: #ffffff;
+
+    align-items: center;
+}
+
+body .header .parte1 {
+    height: inherit;
+    display: flex;
+    align-items: center;
+
+    width: 33%;
+}
+
+body .header .parte1 img {
+    width: 50px;
+    height: inherit;
+}
+
+body .header .parte1 .separacao {
+    background-color: #eceeea;
+    height: 35px;
+    width: 1px;
+}
+
+body .header .parte1 a {
+    font-size: 14.2px;
+    color: black;
+
+    text-decoration: none;
+    margin: 10px;
+    
+    font-family: Roobert;
+}
+
+
+
+
+
+
+body .header .parte2 {
+    display: flex;
+    height: inherit;
+    width: 100%;
+    align-items: center;
+    
+    justify-content: center;
+    width: 34%;
+}
+
+body .header .parte2 .field {
+    display: flex;
+
+    width: 388px;
+    height: 36px;
+
+    justify-content: center;
+}
+
+body .header .parte2 .field input {
+    flex: 1;
+
+    background-color: #eceeea;
+    border-radius: 6px 0 0 6px;
+    border: 0;
+    font-size: 14px;
+    color: #000000;
+    outline-color: #a469af;
+
+    padding-left: 10.5px;
+    padding-right: 10px;
+    padding-top: 3px;
+
+    transition: 150ms;
+}
+
+body .header .parte2 .field button {
+    background-color: #faf3f3;
+    border: 0;
+    border-radius: 0 7px 7px 0;
+
+    height: 36px;
+    width: 36px;
+}
+
+
+
+
+
+body .header .parte3 {
+    display: flex;
+    height: inherit;
+    
+    align-items: center;
+
+    width: 33%;
+}
