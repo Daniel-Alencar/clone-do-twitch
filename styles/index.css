@@ -4,6 +4,15 @@
     src: url("./Roobert/Roobert-Regular.otf");
 }
 
+button {
+    cursor: pointer;
+}
+
+
+button:focus {
+    outline-style: none;
+}
+
 body {
     margin: 0;
 }
@@ -20,6 +29,9 @@ body .header {
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #c4c0c0;
+
+    position: fixed;
+    width: 100%;
 }
 
 body .header .parte1 {
@@ -51,7 +63,28 @@ body .header .parte1 a {
     font-family: Roobert;
 }
 
+body .header .parte1 a:hover {
+    color: #9147ff;
+}
 
+body .header .parte1 button {
+    background-color: #ffffff;
+
+    height: 35px;
+    width: 32px;
+
+    border: 0;
+
+    border-radius: 3px;
+
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+
+body .header .parte1 button:hover {
+    background-color: #f3f3f3;
+}
 
 
 
@@ -86,10 +119,12 @@ body .header .parte2 .field input {
     outline-color: #a469af;
 
     padding-left: 10.5px;
-    padding-right: 10px;
+    padding-right: 10.5px;
     padding-top: 3px;
 
     transition: 150ms;
+
+    margin-right: 1px;
 }
 
 body .header .parte2 .field button {
@@ -99,6 +134,8 @@ body .header .parte2 .field button {
 
     height: 36px;
     width: 36px;
+
+    cursor: not-allowed;
 }
 
 
@@ -141,6 +178,10 @@ body .header .parte3 .b2 {
     font-size: 12px;
 }
 
+body .header .parte3 .b2:hover {
+    background-color: #c9c2c2;
+}
+
 body .header .parte3 .b3 {
     background-color: #9147ff;
     color: white;
@@ -158,6 +199,10 @@ body .header .parte3 .b3 {
 
 }
 
+body .header .parte3 .b3:hover {
+    background-color: #712bdb;
+}
+
 body .header .parte3 .b4 {
     background-color: #ffffff;
 
@@ -169,6 +214,9 @@ body .header .parte3 .b4 {
     margin-right: 8px;
 }
 
+body .header .parte3 button:hover {
+    background-color: #f3f3f3;
+}
 
 
 
@@ -179,6 +227,7 @@ body .lateral {
     height: 100%;
     width: 51px;
     position: fixed;
+    margin-top: 50px;
 
     align-items: center;
     justify-content: center;
@@ -196,13 +245,17 @@ body .lateral .recomendacao .expand {
 
     height: 32px;
     width: 32px;
-    border: 0;
 
+    border: 0;
     border-radius: 3px;
 
     margin-left: 9px;
     margin-right: 9px;
     margin-top: 10px;
+}
+
+body .lateral .recomendacao .expand:hover {
+    background-color: #dadada;
 }
 
 body .lateral .recomendacao .iconeRecomendados {
@@ -217,10 +270,27 @@ body .lateral .recomendacao .iconeRecomendados {
 
 
 
-body .content {
-    margin-left: 60px;
+body .lateral .recomendacao .twitchers {
+    margin-top: 20px;
+    width: 51px;
+    height: 400px;
 }
 
-p {
-    font-size: 100px;
+body .lateral .recomendacao .twitchers div {
+    width: 51px;
+    height: 40px;
+}
+
+body .lateral .recomendacao .twitchers div a {
+    padding: 5px 10px;
+    
+    height: 30px;
+    width: 30px;
+
+}
+
+body .lateral .recomendacao .twitchers div a img {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
 }
