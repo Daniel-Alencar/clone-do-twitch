@@ -10,7 +10,15 @@ button {
 
 
 button:focus {
+    outline: 1px none black;
+
+    /*
+    A mesma coisa de configurar:
+    
+    outline-width: 1px;
     outline-style: none;
+    outline-color: black;
+    */
 }
 
 body {
@@ -31,6 +39,8 @@ body .header {
     border-bottom-color: #c4c0c0;
 
     position: fixed;
+    top: 0px;
+
     width: 100%;
 }
 
@@ -225,9 +235,10 @@ body .header .parte3 button:hover {
 body .lateral {
     background-color: #e0dddda8;
     height: 100%;
-    width: 51px;
+    width: 50px;
+
     position: fixed;
-    margin-top: 50px;
+    top: 50px;
 
     align-items: center;
     justify-content: center;
@@ -293,4 +304,14 @@ body .lateral .recomendacao .twitchers div a img {
     height: 30px;
     width: 30px;
     border-radius: 15px;
+}
+
+
+
+body .content {
+    margin-left: 60px;
+}
+
+body .content p {
+    font-size: 80px;
 }
