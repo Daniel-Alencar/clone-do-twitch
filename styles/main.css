@@ -1,0 +1,64 @@
+
+:root {
+    --branco: #ffffff;
+    --branco-escuro: #f3f3f3;
+
+    --cinza: #c4c0c0;
+    --cinza-claro: #daddd6;
+
+    --preto: #000000;
+    --preto-com-transparencia: #0000001A;
+
+    --roxo-claro: #9147ff;
+    --roxo-escuro: #712bdb;
+
+
+
+
+    --botao-de-busca: #faf3f3;
+    --cor-da-lateral: #e0dddda8;
+}
+
+@font-face{
+    font-family: Roobert;
+    src: url("./Roobert/Roobert-Regular.otf");
+}
+
+body {
+    margin: 0;
+    background-color: var(--branco-escuro);
+}
+
+a, button {
+    font-family: Roobert;
+
+    color: var(--preto);
+    font-size: 14px;
+    text-decoration: none;
+
+    cursor: pointer;
+    outline: 1px none var(--preto);
+
+    /*
+    A mesma coisa de configurar:
+    
+    outline-width: 1px;
+    outline-style: none;
+    outline-color: preto;
+    */
+}
+
+button {
+    font-weight: 600;
+    font-size: 12px;
+
+    border: 0;
+    border-radius: 3px;
+
+    height: 30px;
+    width: 32px;
+}
+
+button:hover {
+    background-color: var(--branco-escuro);
+}
