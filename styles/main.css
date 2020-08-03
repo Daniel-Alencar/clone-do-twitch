@@ -27,6 +27,8 @@
 body {
     margin: 0;
     background-color: var(--branco-escuro);
+
+    box-sizing: border-box;
 }
 
 a, button {
@@ -49,6 +51,7 @@ a, button {
 }
 
 button {
+
     font-weight: 600;
     font-size: 12px;
 
