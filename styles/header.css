@@ -89,7 +89,8 @@
     font-size: 14px;
     color: var(--preto);
 
-    outline-color: var(--roxo-claro);transition: 150ms;
+    outline-color: var(--roxo-claro);
+    transition: 150ms;
 }
 
 #header .parte2 .field button {

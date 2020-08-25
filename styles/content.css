@@ -1,0 +1,33 @@
+#content {
+    position: absolute;
+    height: 75vh;
+    width: 45vw;
+
+    padding: 10px 40px 10px 40px;
+
+    top: 50px;
+    left: 50px;
+
+    min-width: 100%;
+}
+
+#content .streamers-em-evidencia {
+    height: 390px;
+}
+
+#content .recomendacao-canal {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Roobert;
+
+    letter-spacing: 0.3px;
+}
+
+#content .recomendacao-canal .canais {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    column-gap: 10px;
+    row-gap: 10px;
+}
