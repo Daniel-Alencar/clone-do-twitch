@@ -21,7 +21,12 @@
 
 @font-face{
     font-family: Roobert;
-    src: url("./Roobert/Roobert-Regular.otf");
+    src: url("./Roobert/Roobert-Light.otf");
+}
+
+html, body {
+    height: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -29,6 +34,7 @@ body {
     background-color: var(--branco-escuro);
 
     box-sizing: border-box;
+    font-family: Roobert, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a, button {

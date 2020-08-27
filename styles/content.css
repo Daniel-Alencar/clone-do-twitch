@@ -7,16 +7,17 @@
 
     top: 50px;
     left: 50px;
+
+    z-index: -1;
 }
 
 #content .streamers-em-evidencia {
-    height: 370px;
+    height: 340px;
 }
 
 #content .recomendacao-canal {
-    font-size: 20px;
-    font-weight: 600;
-
+    font-size: 18px;
+    font-weight: bold;
     letter-spacing: 0.3px;
 
     padding-top: 10px;
@@ -34,14 +35,23 @@
 }
 
 #content .recomendacao-canal .canais .canal {
-    height: 350px;
+    height: 280px;
 }
 
 #content .recomendacao-canal .canais .canal .live-canal {
-    background: var(--roxo-escuro);
-
     height: 172px;
     width: 307px;
+}
+
+#content .recomendacao-canal .canais .canal .live-canal img {
+    height: inherit;
+    width: inherit;
+}
+
+#content .recomendacao-canal .canais .canal .live-canal:hover {
+    cursor: pointer;
+    transition-duration: 200ms;
+    transform: translate(5px, -5px);
 }
 
 #content .recomendacao-canal .canais .canal .informacoes-canal {
@@ -49,49 +59,67 @@
     height: 110px;
 }
 
-#content .recomendacao-canal .canais .canal .informacoes-canal a {
-    padding: 10px 5px 10px 0px;
-    
-    height: 45px;
-    width: 45px;
+#content .recomendacao-canal .canais .canal .informacoes-canal div {
+    padding: 10px 10px 10px 0px;
+    height: calc(100% - 20px);
 }
 
-#content .recomendacao-canal .canais .canal .informacoes-canal a img {
-    border-radius: 50%;
+#content .recomendacao-canal .canais .canal .informacoes-canal div a {
     height: 42px;
     width: 42px;
 }
 
+#content .recomendacao-canal .canais .canal .informacoes-canal div a img {
+    border-radius: 50%;
+    height: inherit;
+    width: inherit;
+}
+
 #content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto {
     padding: 10px 0px 10px 0px;
+    height: calc(100% - 20px);
+    width: 100%;
 }
 
 #content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto h4 {
     margin: 0px;
-    text-transform: uppercase;
-    
+
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 800;
+
+    vertical-align: baseline;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    color: #1f1f23;
 }
 
 #content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto p {
     font-size: 12px;
     font-weight: 100;
     text-transform: none;
-    line-height: 20px;
+    line-height: 17px;
 
     color: #5c5555;
 
-    margin: 0px 0px 5px 0px;
+    font-family: Roobert, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 5px 0px 5px 0px;
 }
 
 #content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto a {
-    background-color: var(--cinza);
-    border-radius: 18px;
-
+    background-color: #0000000D;
+    border-radius: 20px;
+    
     padding: 0px 8px 0px 8px;
+}
 
-    color: #5c5555;
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto a span {
+    color: #000000B3;
+
     font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 0px;
+
+    padding-bottom: 12px;
 }
