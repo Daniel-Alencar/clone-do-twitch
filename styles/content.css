@@ -1,33 +1,97 @@
 #content {
     position: absolute;
-    height: 75vh;
-    width: 45vw;
+    height: 100vh;
+    width: 90vw;
 
-    padding: 10px 40px 10px 40px;
+    padding: 0px 30px 0px 30px;
 
     top: 50px;
     left: 50px;
-
-    min-width: 100%;
 }
 
 #content .streamers-em-evidencia {
-    height: 390px;
+    height: 370px;
 }
 
 #content .recomendacao-canal {
     font-size: 20px;
     font-weight: 600;
-    font-family: Roobert;
 
     letter-spacing: 0.3px;
+
+    padding-top: 10px;
 }
 
 #content .recomendacao-canal .canais {
+    padding: 10px 0px 10px;
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 
     column-gap: 10px;
-    row-gap: 10px;
+    row-gap: 0px;
+}
+
+#content .recomendacao-canal .canais .canal {
+    height: 350px;
+}
+
+#content .recomendacao-canal .canais .canal .live-canal {
+    background: var(--roxo-escuro);
+
+    height: 172px;
+    width: 307px;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal {
+    display: flex;
+    height: 110px;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal a {
+    padding: 10px 5px 10px 0px;
+    
+    height: 45px;
+    width: 45px;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal a img {
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto {
+    padding: 10px 0px 10px 0px;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto h4 {
+    margin: 0px;
+    text-transform: uppercase;
+    
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto p {
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: none;
+    line-height: 20px;
+
+    color: #5c5555;
+
+    margin: 0px 0px 5px 0px;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto a {
+    background-color: var(--cinza);
+    border-radius: 18px;
+
+    padding: 0px 8px 0px 8px;
+
+    color: #5c5555;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
 }
