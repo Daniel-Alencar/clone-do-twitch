@@ -14,6 +14,8 @@
 
     position: fixed;
     top: 0px;
+
+    z-index: 1;
 }
 
 .parte1, .parte2, .parte3 {

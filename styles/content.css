@@ -1,5 +1,5 @@
 #content {
-    position: absolute;
+    position: relative;
     height: 100vh;
     width: 90vw;
 
@@ -8,7 +8,7 @@
     top: 50px;
     left: 50px;
 
-    z-index: -1;
+    z-index: 0;
 }
 
 #content .streamers-em-evidencia {
@@ -43,15 +43,15 @@
     width: 307px;
 }
 
-#content .recomendacao-canal .canais .canal .live-canal img {
-    height: inherit;
-    width: inherit;
-}
-
 #content .recomendacao-canal .canais .canal .live-canal:hover {
     cursor: pointer;
     transition-duration: 200ms;
     transform: translate(5px, -5px);
+}
+
+#content .recomendacao-canal .canais .canal .live-canal img {
+    height: inherit;
+    width: inherit;
 }
 
 #content .recomendacao-canal .canais .canal .informacoes-canal {
@@ -65,6 +65,8 @@
 }
 
 #content .recomendacao-canal .canais .canal .informacoes-canal div a {
+    display: inline-block;
+
     height: 42px;
     width: 42px;
 }
@@ -81,11 +83,29 @@
     width: 100%;
 }
 
-#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto h4 {
-    margin: 0px;
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto div {
 
+    padding: 0px;
+
+
+    width: 100%;
+    height: 20px;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto div a {
+    display: inline-block;
+    background-color: inherit;
+    border-radius: 0px;
+    padding: 0px;
+
+    width: 255px;
+    height: inherit;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto div a h3 {
+    margin: 0px;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 600;
 
     vertical-align: baseline;
     text-overflow: ellipsis;
@@ -93,6 +113,13 @@
     overflow: hidden;
 
     color: #1f1f23;
+
+    font-family: Roobert-bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto div a h3:hover {
+    color: var(--roxo-claro);
 }
 
 #content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto p {
@@ -107,19 +134,48 @@
     margin: 5px 0px 5px 0px;
 }
 
-#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto a {
-    background-color: #0000000D;
-    border-radius: 20px;
-    
-    padding: 0px 8px 0px 8px;
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto p {
+    width: 100%;
+    height: 20%;
+
+    margin: 1px 0px 1px;
 }
 
-#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto a span {
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto p a {
+    font-size: 12px;
+    font-weight: 100;
+
+    color: #5c5555;
+
+    display: inline-block;
+
+    width: 100%;
+    height: 100%;
+}
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto p a:hover {
+    color: var(--roxo-claro);
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto .tag {
+    height: 25%;
+    width: 100%;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto .tag a {
+    border-radius: 12px;
+
+    background-color: #0000000D;
     color: #000000B3;
 
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 0px;
+    text-align: center;
+    font-size: 10.5px;
 
-    padding-bottom: 12px;
+    height: 14px;
+    width: 28%;
+
+    padding: 4px 0px 4px;
+}
+
+#content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto .tag a:hover {
+    background-color: var(--cinza-claro);
 }
