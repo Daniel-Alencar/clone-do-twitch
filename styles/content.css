@@ -170,10 +170,10 @@
     text-align: center;
     font-size: 10.5px;
 
-    height: 14px;
+    height: 20px;
     width: 28%;
 
-    padding: 4px 0px 4px;
+    line-height: 20px;
 }
 
 #content .recomendacao-canal .canais .canal .informacoes-canal .informacoes-em-texto .tag a:hover {
