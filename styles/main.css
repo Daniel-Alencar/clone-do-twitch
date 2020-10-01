@@ -19,6 +19,13 @@
     --cor-da-lateral: #e0dddda8;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
 @font-face{
     font-family: Roobert;
     src: url("./Roobert/Roobert-Light.otf");
