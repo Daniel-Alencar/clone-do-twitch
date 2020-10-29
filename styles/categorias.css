@@ -1,0 +1,37 @@
+.recomendacao-categorias {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+
+    padding-top: 10px;
+
+    width: inherit;
+}
+
+.recomendacao-categorias a {
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+
+    padding-top: inherit;
+
+    color: var(--roxo-escuro);
+}
+
+.recomendacao-categorias .categorias {
+    display: flex;
+    width: inherit;
+
+    align-items: center;
+
+    margin: 21px 0;
+}
+
+.recomendacao-categorias .categorias .categoria {
+    width: 10.6vw;
+    margin: 0 5px;
+}
+
+.recomendacao-categorias .categorias .categoria img {
+    width: inherit;
+}

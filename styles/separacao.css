@@ -1,6 +1,6 @@
 #separation {
     display: flex;
-    width: 90vw;
+    width: inherit;
     justify-content: center;
     align-items: center;
     height: 40px;
